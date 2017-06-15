@@ -15,11 +15,6 @@ int main()
     int b[digitNum];
     int *res;
 
-/*     char liczba1[]={'2','1','0',0};
-    char* ptr=&liczba1;
-    char liczba2[]={'2',0};
-*/
-
     char liczba1[digitNum];
     char liczba2[digitNum];
 
@@ -78,7 +73,6 @@ int readToArray(int* array, char input[])
         input_size++;
     }while(input[input_size]!=0);
     int i=0;
-/*    array=calloc(input_size, sizeof(int));*/
 
     for(;i<input_size;i++)
     {
