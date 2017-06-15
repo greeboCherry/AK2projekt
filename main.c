@@ -15,17 +15,15 @@ int main()
     int b[digitNum];
     int *res;
 
-    char liczba1[digitNum];
-    char liczba2[digitNum];
+    char liczba1[2000] = {'9','9','9',0};
+    char liczba2[2000] = {'9','9','9',0};
 
 
-    scanf("%s",liczba1);
-    scanf("%s",liczba2);
+//   scanf("%s",liczba1);
+//   scanf("%s",liczba2);
 
-
-
-    int a_size=readToArray(a, liczba1);
-    int b_size=readToArray(b, liczba2);
+   int a_size=readToArray(a, liczba1);
+   int b_size=readToArray(b, liczba2);
 
     res = calloc(a_size+b_size, sizeof(int));
 
