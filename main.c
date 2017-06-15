@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-void multiply(int* A, int* B, int* result, int lenA, int lenB);
+extern void multiply(int* A, int* B, int* result, int lenA, int lenB);
 int readToArray(int* array, char input[]);
 const int base=10;
 const int digitNum= 2000;
@@ -43,10 +43,11 @@ for(i=a_size+b_size-1; i>=0;i--)
 {
      printf("%d", res[i]);
 }
+     printf("\n");
     return 0;
 }
 
-void multiply(int* A, int* B, int* result, int lenA, int lenB)
+/*void multiply(int* A, int* B, int* result, int lenA, int lenB)
 {
 
     int it_a;
@@ -64,7 +65,7 @@ void multiply(int* A, int* B, int* result, int lenA, int lenB)
 
         result[it_b + lenA]+=carry;
     }
-}
+}*/
 
 int readToArray(int* array, char input[])
 {
