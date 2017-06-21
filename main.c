@@ -15,12 +15,12 @@ int main()
     int b[digitNum];
     int *res;
 
-    char liczba1[2000] = {'9','9','9',0};
-    char liczba2[2000] = {'9','9','9',0};
+   char liczba1[2000];
+   char liczba2[2000];
 
 
-//   scanf("%s",liczba1);
-//   scanf("%s",liczba2);
+  scanf("%s",liczba1);
+  scanf("%s",liczba2);
 
    int a_size=readToArray(a, liczba1);
    int b_size=readToArray(b, liczba2);
@@ -44,6 +44,8 @@ for(i=a_size+b_size-1; i>=0;i--)
      printf("\n");
     return 0;
 }
+
+
 
 /*void multiply(int* A, int* B, int* result, int lenA, int lenB)
 {
